@@ -8,7 +8,7 @@ image:
   repository: prasadchandu/java
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "reactjs"
+  tag: "react"
 
 imagePullSecrets:
   - docker-cred
@@ -54,7 +54,7 @@ ingress:
     alb.ingress.kubernetes.io/target-type: "instance"
     alb.ingress.kubernetes.io/listen-ports: '[ {"HTTP": 80}]'
   hosts:
-    - host: chart-example.local
+    - host: admin.myapp22.xyz
       paths:
         - path: /
           pathType: ImplementationSpecific
